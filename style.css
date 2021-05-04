@@ -1,0 +1,346 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p,
+a {
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 2.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+
+#pageWrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#headerWrapper {
+  background-color: #000;
+  margin-bottom: 5rem;
+}
+
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header,
+header a {
+  color: #fff;
+}
+
+header :hover {
+  color: pink;
+}
+
+header#main {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header#contactHeader {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem 0;
+  z-index: 5;
+}
+
+nav {
+  display: flex;
+}
+
+#mainNav li {
+  list-style: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+#mainNav li:last-child {
+  margin-right: 0;
+}
+
+#mainNav li > a {
+  font-size: 1.8rem;
+  text-decoration: none; /*removes underline*/
+}
+
+#mainNav li > a:hover {
+  color:pink;
+}
+
+#mainArea {
+  display: flex;
+}
+
+#sidebar {
+  background-color: rgb(255, 243, 243);
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+  min-width: 32rem;
+  text-align: center;
+  color:#000
+}
+
+#mainArea #sidebar > a:hover {
+  color: pink;
+}
+
+#mainArea #sidebar nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#mainArea #sidebar nav li > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+#mainArea #sidebar nav li > a:hover {
+  color: pink; 
+}
+
+
+#mainContent {
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+}
+
+#footerWrapper {
+  background-color: #000;
+  margin-top: auto;
+}
+
+footer {
+  color: #fff;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* START OF SEPARATE STYLING */
+.block {
+  display: block;
+}
+
+label {
+  font-size: 1.8rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  height: 3rem;
+  outline: none;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+input[type="submit"] {
+  text-transform: capitalize;
+  background-color: rgb(36, 173, 36);
+  border: 1px solid rgb(36, 173, 36);
+  border-radius: 0.5rem;
+  color: #fff;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+/* Custom Styling Starts Here */
+
+#formContainer {
+  position: relative;
+  color: #fff;
+  margin-top: 35rem;
+  background: url("../imgs/coding/coding.jpg, ../imgs/selfie/selfie.jpg")  center/cover;
+}
+
+#contentArea {
+  position: relative;
+  z-index: 5;
+}
+
+.overlay {
+  position: absolute;
+  background-color: #797070;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+header#contactHeader {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem 0;
+  z-index: 5;
+}
+
+header#contactHeader ul {
+  display: flex;
+  list-style: none;
+}
+
+header#contactHeader ul li > a {
+  font-size: 3rem;
+  padding: 0.5rem;
+  color: #35d5eb;
+}
+
+header#contactHeader ul li > a:hover {
+  color: #1bcfe7;
+}
+
+.containerCT {
+  max-width: 77rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  padding: 2rem 0 0 4rem;
+  min-width: 38rem;
+  text-align: right;
+}
+
+#leftCol {
+  padding: 2rem 6rem;
+}
+
+#leftCol a {
+  text-decoration: none;
+}
+
+#leftCol a > h4 {
+  width: 61%;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 0.5rem;
+}
+
+#rightCol p {
+  font-size: 2rem;
+}
+
+#rightCol small {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+#rightCol button {
+  margin: 2rem 1rem 0 0;
+  padding: 1rem 3rem;
+  background-color: transparent !important;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  color: #efefef;
+  text-transform: capitalize;
+  transition: background-color 10s ease-in-out;
+}
+
+#rightCol button:hover {
+  background-color: pink;
+  border: 1px solid pink;
+  cursor: pointer;
+}
+
+.short {
+  width: 48%;
+}
+
+.long {
+  width: 100%;
+}
+
+footer#contactFooter {
+  position: relative;
+  z-index: 5;
+  padding: 1.5rem 0;
+  text-align: center;
+  display: block;
+}
+
+.stackem {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contact Page Styling */
+
+#contactIntro h3 {
+  text-align: center;
+}
+
+#contactIntro h2 {
+  text-align: center;
+}
+
+#contactIntro img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 400px;
+  padding: 0 6px;
+
+}
+
+/* About Page Styling */
+
+#about {
+  text-align: center;
+}
